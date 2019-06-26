@@ -1,0 +1,55 @@
+.container{
+	display: flex;
+	flex-direction: row;
+}
+.nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+.nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+.tel {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.promo .container{
+	display: flex;
+	flex-direction: column;
+}
+.about{
+	background-color: blueviolet;
+}
+.about .container{
+	display: flex;
+	flex-direction: column;
+}
+.about-decr{
+	text-align: center;
+}
+.about-col{
+	float: right;
+}
+.about-col:first-child{
+	float: left;
+}
+.about-list{
+	color: white;
+}
+.about-list li{
+	margin: 10px;
+}
+.about-col a{
+	color: yellow;
+	font-size: 20px;
+}
