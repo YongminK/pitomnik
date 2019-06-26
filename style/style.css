@@ -1,6 +1,17 @@
-.container{
+body{
+	background-color: #ede9e0;
+	margin: 0;
+}
+.wrapper{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.header .container{
 	display: flex;
 	flex-direction: row;
+}
+.logo-img{
+	float: left;
 }
 .nav ul{
 	display: flex;
@@ -18,30 +29,55 @@
   }
 .tel {
 	display: block;
-	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+.tel-link{
+	color: #45129f;
+
 }
 .promo .container{
 	display: flex;
 	flex-direction: column;
 }
 .about{
-	background-color: blueviolet;
+	background-image: url('../img/background-about.png');
+	background-size: 100% 100%;
+	padding: 10% 5%;
+
 }
 .about .container{
 	display: flex;
 	flex-direction: column;
 }
 .about-decr{
-	text-align: center;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+}
+.title--white{
+	color: white;
+	text-align: left;
+	font-size: 36px;
+	margin: 0.2em 0;
+}
+.about-text{
+	color: #987bbb;
+	text-align: left;
+	line-height: 2em;
+	margin: 0.2em 0;
+	font-size: 20px;
+}
+.about-img{
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(0,0,0,1);
 }
 .about-col{
-	float: right;
-}
-.about-col:first-child{
-	float: left;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-top: 10%;
 }
 .about-list{
 	color: white;
@@ -52,4 +88,12 @@
 .about-col a{
 	color: yellow;
 	font-size: 20px;
+}
+.breeds-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.breeds-item{
+	width: 50%;
+	list-style: none;
 }
