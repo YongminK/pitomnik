@@ -4,19 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Project Pitomnik</title>
 	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
 				<div  class="logo">
-					<img src="./img/header.jpg" alt="логотип" class="logo-img">
+					<img src="./img/logo.JPG" alt="логотип" class="logo-img">
 				</div>
 				<div class="container">
 					<nav class="nav">
 						<ul class="nav-list">
 							<li class="nav-item">
-								<a href="" class="nav-link">О Питомнике</a>
+								<a href="#about" class="nav-link">О питомнике</a>
 							</li>
 							<li class="nav-item">
 								<a href="" class="nav-link">Животные</a>
@@ -35,17 +36,17 @@
 					<div class="tel">
 						<a class="tel-link" href="tel:+79252569877">+7(925)256 98 77</a>
 					</div>
-				</div>
+				</div>				
 			</div>
-		</header>
-		<main>
 			<section class="promo">
 				<div class="container">
 					<h1 class="promo-title">Питомник породистых<br> животных рядом<br> с вашим домом</h1>
 					<p class="promo-text">Животные как дети — им нужны мы</p>
 				</div>
 			</section>
-			<section class="about">
+		</header>
+		<main>
+			<section class="about" id="about">
 				<div class="container">
 					<div class="about-decr">
 						<h2 class="title title--white">О питомнике</h2>
@@ -55,14 +56,14 @@
 						<div class="col">
 								<img class="about-img" src="./img/about-img.JPG" alt="dog-mops">
 							</div>
-							<div class="col">
+							<div class="col-list">
 								<ul class="about-list">
 									<li class="about-item">Лучшие представители своей породы</li>
 									<li class="about-item">Сбалансированный рацион питания питомцев</li>
 									<li class="about-item">Ежедневный уход и тренировки</li>
 									<li class="about-item">Веселье, свежий воздух и отличная компания</li>
 								</ul>
-							<a href="#">Видео с наших прогулок</a>
+							<a href="#">Видео с наших прогулок   &rarr;</a>
 						</div>
 					</div>
 				</div>
@@ -74,40 +75,41 @@
 						<li class="breeds-item">
 							<h3 class="breeds-title">Французский бульдог</h3>
 							<div class="breeds-wrap">
-								<img src="" alt="аватарка бульдога" class="breeds-img">
+								<img src="./img/buldog-avatar.JPG" alt="аватарка бульдога" class="breeds-img">
 								<div class="breeds-block">
 									<p class="breeds-text">Идеальный вариант городской собаки — они входят в тройку самых популярных собак на планете. Любят короткие прогуляки и хорошо поспать.</p>
-									<a href="#">Посмотреть щенков</a>
+									<a href="#">Посмотреть щенков   &rarr;</a>
 								</div>
 							</div>
 						</li>
 						<li class="breeds-item">
 							<h3 class="breeds-title">Золотистый ретривер</h3>
 							<div class="breeds-wrap">
-								<img src="" alt="аватарка ретривера" class="breeds-img">
+								<img src="./img/retriver-avatar.JPG" alt="аватарка ретривера" class="breeds-img">
 								<div class="breeds-block">
 									<p class="breeds-text">Добродушные, ориентированные на людей собаки. Они отлично ведут себя с детьми и больными. Могут быть повыдырями.</p>
-									<a href="#">Посмотреть щенков</a>
+									<a href="#">Посмотреть щенков   &rarr;</a>
 								</div>
 							</div>
 						</li>
 						<li class="breeds-item">
 							<h3 class="breeds-title">Чау-чау</h3>
 							<div class="breeds-wrap">
-								<img src="" alt="аватарка чау-чау" class="breeds-img">
+								<img src="./img/chau-avatar.JPG" alt="аватарка чау-чау" class="breeds-img">
 								<div class="breeds-block">
 									<p class="breeds-text">Эти собаки с характером. Они всегда серьезны, но временами проявляют характер.</p>
-									<a href="#">Посмотреть щенков</a>
+									<a href="#">Посмотреть щенков   &rarr;</a>
 								</div>	
 							</div>
 						</li>
 						<li class="breeds-item">
 							<h3 class="breeds-title">Пудель</h3>
 							<div class="breeds-wrap">
-								<img src="" alt="аватарка пуделя" class="breeds-img">
+								<img src="./img/pudel-avatar.JPG" alt="аватарка пуделя" class="breeds-img">
 								<div class="breeds-block">
 									<p class="breeds-text">Активные и компанейские собаки. Любят много гулять, обладают отличным чувством юмора.
-									<a href="#">Посмотреть щенков</a></p>
+									</p>
+									<a href="#">Посмотреть щенков   &rarr;</a>
 								</div>
 							</div>
 						</li>
@@ -124,7 +126,7 @@
 							<blockquote class="reviews-text">Хочу выразить большую благодарность Вам за это чудо — малыша, который появился у нас в семье. Деликатный, милый, ласковый и нежный бесконечный Уник, в которого я влюбилась с первого взгляда, увидив его фотографию на сайте Вашего питомника. Очень умный малыш!</blockquote>
 						</div>
 						<div class="reviews-col">
-							<img class="reviews-img" src="#" alt="питомец и хозяин">
+							<img class="reviews-img" src="./img/review.JPG" alt="питомец и хозяин">
 							<div class="reviews-more">Больше отзывов можно найти у нас в <a href="#">группе ВК</a></div>
 						</div>
 					</div>
@@ -149,12 +151,12 @@
 					</div>
 					<div class="blog-col">
 						<div class="blog-card">
-							<img class="blog-img" src="" alt="лабрадор">
+							<img class="blog-img" src="./img/adult-img.JPG" alt="лабрадор">
 							<div class="blog-text">Правильный рацион для взрослого пса</div>
 							<a class="blog-read" href="#">Читать статью</a>
 						</div>
 						<div class="blog-card">
-							<img class="blog-img" src="" alt="овчарка">
+							<img class="blog-img" src="./img/depressiom-img.JPG" alt="овчарка">
 							<div class="blog-text">Бывает ли собачья депрессия?</div>
 							<a class="blog-read" href="#">Читать статью</a>
 						</div>

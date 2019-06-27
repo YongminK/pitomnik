@@ -1,17 +1,23 @@
 body{
 	background-color: #ede9e0;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
+
 }
 .wrapper{
 	margin-left: 10%;
 	margin-right: 10%;
 }
+.header{
+	margin-bottom: 5%;
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	height: 500px;
+}
 .header .container{
 	display: flex;
 	flex-direction: row;
-}
-.logo-img{
-	float: left;
+	justify-content: space-between;
 }
 .nav ul{
 	display: flex;
@@ -22,10 +28,13 @@ body{
 }
 .nav li a {
 	display: block;
-	color: black;
+	color: #1d1c18;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 14px 20px;
 	text-decoration: none;
+	font-weight: 550;
+	letter-spacing: 2x;
+	font-size: 19px;
   }
 .tel {
 	display: block;
@@ -35,39 +44,60 @@ body{
 }
 .tel-link{
 	color: #45129f;
-
+	letter-spacing: 2x;
+	font-size: 19px;
+	text-decoration: none;
+}
+.promo{
+	display: flex;
+	justify-content: flex-start;
+	padding: 5% 0 0 40%;
 }
 .promo .container{
 	display: flex;
 	flex-direction: column;
 }
+.promo-title{
+	font-size: 36px;
+}
+.promo-text{
+	border-left: 2px #510faf solid;
+	padding-left: 20px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #757074;
+}
 .about{
 	background-image: url('../img/background-about.png');
 	background-size: 100% 100%;
-	padding: 10% 5%;
-
+	background-repeat: no-repeat;
+	padding: 5% 2%;
+	margin-bottom: 10%;
 }
 .about .container{
 	display: flex;
 	flex-direction: column;
+	padding: 8% 10% 15% 1%;
 }
 .about-decr{
 	display: flex;
 	align-self: center;
 	flex-direction: column;
+	padding-left: 10%;
 }
 .title--white{
 	color: white;
 	text-align: left;
-	font-size: 36px;
+	font-size: 30px;
 	margin: 0.2em 0;
 }
 .about-text{
 	color: #987bbb;
 	text-align: left;
-	line-height: 2em;
+	line-height: 1.5em;
 	margin: 0.2em 0;
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 400;
 }
 .about-img{
 	width: 100%;
@@ -77,23 +107,175 @@ body{
 .about-col{
 	display: grid;
 	grid-template-columns: 50% 50%;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 .about-list{
 	color: white;
+	margin: 0;
+	padding: 0;
 }
 .about-list li{
 	margin: 10px;
+	margin: 20px;
+	font-weight: 400;
 }
 .about-col a{
-	color: yellow;
-	font-size: 20px;
+	color: #eede0c;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: 600;
 }
+.col-list{
+	margin-left: 10%;
+}
+
 .breeds-list{
 	display: flex;
 	flex-wrap: wrap;
 }
 .breeds-item{
-	width: 50%;
+	width: 45%;
 	list-style: none;
+	margin: 0 10px;
 }
+.breeds-title{
+	font-size: 26px;
+}
+.breeds-wrap{
+	display: flex;
+}
+.breeds-block{
+	position: relative;
+}
+.breeds-text{
+	color:#787570;
+	line-height: 1.5em;
+	font-size: 18px;
+}
+.breeds-wrap a{
+	text-decoration: none;
+	color: #6530b6;
+	text-transform: uppercase;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	position: absolute;
+	bottom: 0;
+
+}
+.breeds-img{
+	margin-right: 20px;
+	font-size: px;
+}
+.title{
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 5%;
+}
+.review .title{
+	margin-bottom: 0;
+}
+.breeds{
+	margin-bottom: 10%;
+}
+.reviews-wrap{
+	display: flex;
+	background-image: url('../img/review-background.JPG');
+	background-repeat: no-repeat;
+}
+.reviews-col{
+	padding-top: 10%;
+}
+.reviews-img{
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+.reviews-name{
+	font-size: 30px;
+}
+.reviews-data{
+	color: #747371;
+	font-style: italic;
+}
+.reviews-text{
+	margin: 0;
+	padding-right: 5%;
+	line-height: 1.5em;
+	font-weight: 500;
+	font-size: 24px;
+	color: #211c16;
+}
+.reviews-more{
+	font-style: italic;
+	color: #75706c;
+	padding: 10px;
+	font-weight: 600;
+}
+.reviews-more a{
+	color: #5e11ad;
+	text-decoration: none;
+}
+.reviews{
+	margin-bottom: 15%;
+}
+.blog{
+	background-image: url('../img/blog-background.jpg');
+	padding: 5%;
+}
+.blog .container{
+	display: flex;
+}
+.blog-col:first-child{
+	display: flex;
+	flex-direction: column;
+}
+.blog-col{
+	display: flex;
+}
+.blog-card{
+	background-color: white;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.blog-text{
+	color: white;
+	border-radius: 0 0 10px 10px;
+}
+.blog-img{
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.blog-card .blog-text{
+	background-color: white;
+	color: black;
+
+}
+@media (max-width: 1024px) {
+	.nav li a {
+		padding: 14px 10px;
+		font-weight: 550;
+		letter-spacing: 2x;
+		font-size: 15px;
+	}
+	.tel-link{
+		font-size: 15px;
+	}
+	.about-list li{
+		margin: 10px;
+		font-size: 14px;
+	}
+	.breeds-list{
+		flex-direction: column;
+	}
+	.breeds-item{
+		width: 100%;
+		margin: 0 10px;
+	}
+	.reviews-wrap{
+		flex-direction: column;
+	}
+	.reviews-img{
+		width: 100%;
+
+	}
+  }
